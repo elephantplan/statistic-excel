@@ -1,0 +1,25 @@
+{
+  "name": "abps-statistic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://hagithub.home/nwy372/abps-statistic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.10.0",
+    "nodegit": "^0.27.0",
+    "nodemon": "^3.1.0",
+    "winston": "^3.11.0"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+delete/
+*.bak.*
+*.bak
+*[Cc]opy*
+xxx*
+package.bat
+deploy/
+app.log
+access.log
+exceptions.log
+src/
