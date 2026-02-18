@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>東京＆河口湖 早春絕景之旅</title>
+    <title>東京早櫻 & 河口湖絕景七日行</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,6 +15,12 @@
         .food-option:hover { border-color: #ec4899; transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; margin-right: 4px;}
         .badge-tabelog { background-color: #fbbf24; color: #78350f; }
+        
+        /* 櫻花狀態標籤樣式 */
+        .status-full { background-color: #fce7f3; color: #be185d; border: 1px solid #fbcfe8; } /* 滿開 */
+        .status-end { background-color: #e5e7eb; color: #6b7280; border: 1px solid #d1d5db; } /* 葉櫻 */
+        .status-wait { background-color: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; } /* 花苞 */
+
         a { text-decoration: none; transition: color 0.2s; }
         a:hover { opacity: 0.8; }
     </style>
@@ -24,30 +30,79 @@
     <header class="header-bg text-white py-12 px-6 shadow-lg">
         <div class="max-w-5xl mx-auto">
             <div class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-bold mb-2 backdrop-blur-md">
-                7 Days | 3月4日 - 3月10日
+                3月4日 - 3月10日｜東京 & 河口湖
             </div>
-            <h1 class="text-3xl md:text-5xl font-bold mb-4">東京早櫻 & 河口湖富士絕景行</h1>
-            <p class="text-lg opacity-90"><i class="fas fa-map-marked-alt mr-2"></i> 東京 (4天) + 河口湖 (2天)</p>
-            
-            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-800">
-                <div class="bg-white/90 backdrop-blur rounded-lg p-3 text-sm">
-                    <i class="fas fa-flower text-pink-500 mr-2"></i> <strong>賞櫻情報：</strong>
-                    <br>東京：寒緋櫻/大寒櫻 (滿開)
-                    <br>河口湖：梅花 (櫻花未開)
-                </div>
-                <div class="bg-white/90 backdrop-blur rounded-lg p-3 text-sm">
-                    <i class="fas fa-route text-blue-500 mr-2"></i> <strong>河口湖策略：</strong>
-                    <br>Day 5：遊覽船+纜車+大石 (巴士)
-                    <br>Day 6：淺間神社+下吉田 (電車)
-                </div>
-                <div class="bg-white/90 backdrop-blur rounded-lg p-3 text-sm">
-                    <i class="fas fa-cloud-sun text-orange-500 mr-2"></i> <strong>天氣提醒：</strong>
-                    <br>河口湖3月仍非常冷 (約0-10度)
-                    <br>請務必攜帶保暖大衣。
-                </div>
-            </div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">東京早春尋櫻 & 富士山絕景之旅</h1>
+            <p class="text-lg opacity-90"><i class="fas fa-calendar-alt mr-2"></i> 2026/03/04 - 03/10</p>
         </div>
     </header>
+
+    <section class="max-w-5xl mx-auto mt-8 px-4">
+        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-pink-400">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                <i class="fas fa-fan text-pink-500 fa-spin mr-2"></i> 3/4 - 3/10 櫻花與花況情報
+            </h3>
+            <p class="text-sm text-gray-500 mb-6">這段時間處於「早櫻結束」與「吉野櫻未開」的空窗期，請鎖定以下特定品種以免撲空：</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <div class="border rounded-lg p-4 bg-pink-50 border-pink-200 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-pink-500 text-white text-xs px-2 py-1 font-bold">本週主角</div>
+                    <h4 class="font-bold text-lg text-gray-800">寒櫻 / 大寒櫻</h4>
+                    <p class="text-xs text-gray-500 mb-2">Kan-zakura</p>
+                    <div class="mb-3">
+                        <span class="badge status-full"><i class="fas fa-check-circle mr-1"></i> 滿開 ~ 七分</span>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-2">顏色較深粉紅，花形如吊鐘向下。這週是最佳觀賞期！</p>
+                    <hr class="border-pink-200 my-2">
+                    <p class="text-xs font-bold text-gray-600"><i class="fas fa-map-marker-alt text-pink-500"></i> 推薦地點：</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen+National+Garden" target="_blank" class="text-blue-600 text-xs hover:underline block">1. 新宿御苑 (入口處/日本庭園)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ueno+Park+Park+Entrance" target="_blank" class="text-blue-600 text-xs hover:underline block">2. 上野公園 (噴水池入口廣場)</a>
+                </div>
+
+                <div class="border rounded-lg p-4 bg-gray-50">
+                    <h4 class="font-bold text-lg text-gray-800">河津櫻</h4>
+                    <p class="text-xs text-gray-500 mb-2">Kawazu-zakura</p>
+                    <div class="mb-3">
+                        <span class="badge status-end"><i class="fas fa-wind mr-1"></i> 葉櫻 / 吹雪</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">東京市區已過全盛期，多已長出綠葉。不建議特地安排。</p>
+                    <hr class="border-gray-200 my-2">
+                    <p class="text-xs font-bold text-gray-600"><i class="fas fa-map-marker-alt text-gray-400"></i> 僅存機會：</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Kyu-Nakagawa+River+Kawazu+Cherry+Blossoms" target="_blank" class="text-blue-600 text-xs hover:underline block">舊中川 (晴空塔附近，可能有殘花)</a>
+                </div>
+
+                <div class="border rounded-lg p-4 bg-gray-50">
+                    <h4 class="font-bold text-lg text-gray-800">染井吉野櫻</h4>
+                    <p class="text-xs text-gray-500 mb-2">Somei Yoshino</p>
+                    <div class="mb-3">
+                        <span class="badge status-wait"><i class="far fa-clock mr-1"></i> 花苞 / 未開</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">東京最主流的白色櫻花。3月初完全還沒開，請避開「目黑川、千鳥之淵」等景點。</p>
+                </div>
+
+                <div class="border rounded-lg p-4 bg-blue-50 border-blue-200">
+                    <h4 class="font-bold text-lg text-gray-800">河口湖花況</h4>
+                    <p class="text-xs text-gray-500 mb-2">Lake Kawaguchiko</p>
+                    <div class="mb-3">
+                        <span class="badge status-full" style="background:#fefce8; color:#854d0e; border-color:#fef08a;"><i class="fas fa-camera mr-1"></i> 梅花 (Plum)</span>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-2">山上太冷櫻花未開。但「梅花」正盛開，且空氣乾燥，是看富士山最清楚的季節。</p>
+                    <hr class="border-blue-200 my-2">
+                    <p class="text-xs font-bold text-gray-600"><i class="fas fa-map-marker-alt text-blue-500"></i> 推薦地點：</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Oishi+Park" target="_blank" class="text-blue-600 text-xs hover:underline block">大石公園 (梅花+富士山)</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto mt-6 px-4">
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-sm text-blue-900">
+            <h4 class="font-bold mb-1"><i class="fas fa-info-circle mr-2"></i> 河口湖行程邏輯 (您的定制需求)</h4>
+            <p>已按照您的要求優化：<strong>Day 5 集中在湖畔 (遊船/纜車/大石)</strong>，使用巴士；<strong>Day 6 集中在下吉田 (神社)</strong>，使用電車。這是最順路且省時的安排。</p>
+        </div>
+    </section>
 
     <section class="max-w-5xl mx-auto mt-8 px-4">
         <div class="day-header p-5 rounded-r-xl shadow-sm flex justify-between items-center">
@@ -60,7 +115,7 @@
                     <span class="text-blue-600 font-bold text-sm w-16">15:00</span>
                     <h3 class="text-xl font-bold text-gray-800">抵達東京 & Check-in (新宿)</h3>
                 </div>
-                <p class="text-sm text-gray-600 mt-1">建議住在新宿站附近，因為去河口湖的巴士和電車都從這裡出發。</p>
+                <p class="text-sm text-gray-600 mt-1">建議住宿新宿，方便 Day 5 直達河口湖。</p>
             </div>
             <div>
                 <div class="flex items-baseline gap-3 mb-3">
@@ -103,12 +158,15 @@
             <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold">新宿御苑 & 澀谷</span>
         </div>
         <div class="mt-4 border-l-2 border-gray-200 pl-6 space-y-8 pb-4">
+            <div class="bg-pink-50 p-3 rounded border border-pink-100 mb-4">
+                <p class="text-sm text-pink-800"><strong>🌸 今日賞櫻重點：</strong> 新宿御苑是本週東京花況最好的地方（寒櫻滿開）。</p>
+            </div>
             <div>
                 <div class="flex items-baseline gap-3">
                     <span class="text-blue-600 font-bold text-sm w-16">09:30</span>
-                    <h3 class="text-xl font-bold text-gray-800">新宿御苑 (賞早櫻)</h3>
+                    <h3 class="text-xl font-bold text-gray-800">新宿御苑 (Shinjuku Gyoen)</h3>
                 </div>
-                <p class="text-sm text-gray-600 mt-1">3月初是「寒櫻」和「修善寺寒櫻」的季節。這裡是東京少數此時能看到粉紅花海的地方。</p>
+                <p class="text-sm text-gray-600 mt-1">尋找顏色較深的「寒櫻」與「修善寺寒櫻」。</p>
                 <a href="https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen+National+Garden" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
             </div>
             <div>
@@ -116,7 +174,7 @@
                     <span class="text-blue-600 font-bold text-sm w-16">14:00</span>
                     <h3 class="text-xl font-bold text-gray-800">澀谷 Sky & 逛街</h3>
                 </div>
-                <p class="text-sm text-gray-600 mt-1">登上 Shibuya Sky 觀景台（請提前線上預約），之後逛 Parco 或宮下公園。</p>
+                <p class="text-sm text-gray-600 mt-1">登上 Shibuya Sky 觀景台（請提前線上預約）。</p>
                 <a href="https://www.google.com/maps/search/?api=1&query=Shibuya+Sky" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
             </div>
         </div>
@@ -133,8 +191,16 @@
                     <span class="text-blue-600 font-bold text-sm w-16">09:00</span>
                     <h3 class="text-xl font-bold text-gray-800">淺草寺 & 仲見世通</h3>
                 </div>
-                <p class="text-sm text-gray-600 mt-1">東京最古老寺廟，感受下町風情。</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Sensoji+Temple" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
+                <p class="text-sm text-gray-600 mt-1">隅田川公園此時可能只有零星早開櫻花，主要感受下町風情。</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Senso-ji+Temple" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
+            </div>
+            <div>
+                <div class="flex items-baseline gap-3">
+                    <span class="text-blue-600 font-bold text-sm w-16">13:00</span>
+                    <h3 class="text-xl font-bold text-gray-800">東京晴空塔 & 舊中川</h3>
+                </div>
+                <p class="text-sm text-gray-600 mt-1">如果想碰運氣看最後的河津櫻，可以去晴空塔附近的「舊中川」。</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
             </div>
         </div>
     </section>
@@ -164,9 +230,9 @@
 
         <div class="mt-4 border-l-2 border-gray-200 pl-6 space-y-8 pb-4">
             <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 mb-4">
-                <h4 class="font-bold text-blue-800 mb-2"><i class="fas fa-bus mr-2"></i> 今日交通攻略：河口湖周遊巴士 (Red Line)</h4>
+                <h4 class="font-bold text-blue-800 mb-2"><i class="fas fa-bus mr-2"></i> 今日交通：河口湖周遊巴士 (Red Line)</h4>
                 <p class="text-sm text-blue-900">
-                    今天的所有景點都在「紅線巴士」路線上。建議在河口湖車站購買「巴士二日券」或直接刷 IC 卡。
+                    今天的所有景點都在「紅線巴士」路線上。建議在河口湖車站購買「巴士二日券」或刷 IC 卡。
                 </p>
             </div>
 
@@ -184,14 +250,14 @@
                     <span class="text-blue-600 font-bold text-sm w-16">13:00</span>
                     <h3 class="text-xl font-bold text-gray-800">天上山纜車 & 遊覽船「天晴」</h3>
                 </div>
-                <p class="text-sm text-gray-600 mt-2">這兩個點在同一個地方（紅線巴士第 9 站）。</p>
+                <p class="text-sm text-gray-600 mt-2">這兩個點入口就在對面（紅線巴士第 9 站）。</p>
                 <ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
-                    <li><strong>天上山公園 (Ropeway)：</strong> 搭纜車上山，從高處俯瞰河口湖與富士山。上面有狸貓茶屋。</li>
-                    <li><strong>遊覽船「天晴」(Appare)：</strong> 20分鐘的遊湖行程，從湖面看富士山，非常愜意。</li>
+                    <li><strong>天上山公園 (Ropeway)：</strong> 絕佳富士山視角，有兔子神社。</li>
+                    <li><strong>遊覽船「天晴」(Appare)：</strong> 20分鐘遊湖，從湖面仰望富士山。</li>
                 </ul>
                 <div class="mt-2 space-x-3">
                     <a href="https://www.google.com/maps/search/?api=1&query=Mt.+Fuji+Panoramic+Ropeway" target="_blank" class="text-blue-500 text-sm hover:underline"><i class="fas fa-map-marker-alt"></i> 纜車 Map</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Kawaguchiko+Excursion+Ship+Appare" target="_blank" class="text-blue-500 text-sm hover:underline"><i class="fas fa-map-marker-alt"></i> 遊船 Map</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchi+Excursion+Ship+Appare" target="_blank" class="text-blue-500 text-sm hover:underline"><i class="fas fa-map-marker-alt"></i> 遊船 Map</a>
                 </div>
             </div>
 
@@ -201,8 +267,8 @@
                     <h3 class="text-xl font-bold text-gray-800">大石公園 (Oishi Park)</h3>
                 </div>
                 <p class="text-sm text-gray-600 mt-1">搭乘巴士繼續往終點站走（第 20 站）。</p>
-                <p class="text-sm text-gray-600 mt-1">這裡是拍攝「富士山完整全貌」的最佳地點。3月初雖然沒有薰衣草，但可能還有殘雪和梅花。一定要吃這裡的「藍莓冰淇淋」。</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Oishi+Park" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
+                <p class="text-sm text-gray-600 mt-1"><strong>花況：</strong> 此時可賞梅花，雖然沒有薰衣草，但這裡能拍到最完整的富士山倒影。</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Oishi+Park+Kawaguchiko" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
             </div>
 
             <div>
@@ -236,7 +302,7 @@
 
         <div class="mt-4 border-l-2 border-gray-200 pl-6 space-y-8 pb-4">
              <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100 mb-4">
-                <h4 class="font-bold text-yellow-800 mb-2"><i class="fas fa-subway mr-2"></i> 今日交通攻略：富士急行線電車</h4>
+                <h4 class="font-bold text-yellow-800 mb-2"><i class="fas fa-subway mr-2"></i> 今日交通：富士急行線電車</h4>
                 <p class="text-sm text-yellow-900">
                     今天<strong>不要搭巴士</strong>！從「河口湖站」搭電車到「下吉田站」只要 10 分鐘，快速又準時。
                 </p>
@@ -248,8 +314,8 @@
                     <h3 class="text-xl font-bold text-gray-800">新倉山淺間神社 (忠靈塔)</h3>
                 </div>
                 <p class="text-sm text-gray-600 mt-1">從下吉田車站步行 10 分鐘到登山口，再爬 398 階樓梯。</p>
-                <p class="text-sm text-gray-600 mt-1"><strong>重點：</strong> 這是最經典的明信片視角（五重塔+富士山）。一定要早上來，因為下午逆光，富士山會變黑。</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Arakurayama+Sengen+Park" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
+                <p class="text-sm text-gray-600 mt-1"><strong>重點：</strong> 這是最經典的明信片視角（五重塔+富士山）。</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Chureito+Pagoda" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
             </div>
 
             <div>
@@ -257,22 +323,8 @@
                     <span class="text-blue-600 font-bold text-sm w-16">10:30</span>
                     <h3 class="text-xl font-bold text-gray-800">下吉田 本町通 (日川時計店)</h3>
                 </div>
-                <p class="text-sm text-gray-600 mt-1">從神社走下來就是。這是一條筆直的商店街，巨大的富士山就在街道盡頭，是近年最紅的 IG 打卡點。</p>
+                <p class="text-sm text-gray-600 mt-1">從神社走下來就是。巨大的富士山就在街道盡頭，IG 爆紅打卡點。</p>
                 <a href="https://www.google.com/maps/search/?api=1&query=Honcho+Street+Shimoyoshida" target="_blank" class="text-blue-500 text-sm hover:underline mt-1 inline-block"><i class="fas fa-map-marker-alt mr-1"></i> Google Map</a>
-            </div>
-
-            <div>
-                <div class="flex items-baseline gap-3 mb-3">
-                    <span class="text-orange-500 font-bold text-sm w-16">Lunch</span>
-                    <h3 class="text-lg font-bold text-gray-800">下吉田推薦咖啡/午餐</h3>
-                </div>
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="food-option p-4">
-                        <h4 class="font-bold text-gray-800">FabCafe Fuji</h4>
-                        <p class="text-xs text-gray-500 mt-1 mb-3">很有設計感的咖啡廳，適合休息整理照片。</p>
-                        <a href="https://www.google.com/maps/search/?api=1&query=FabCafe+Fuji" target="_blank" class="text-blue-600 text-xs font-bold"><i class="fas fa-map-marker-alt"></i> Map</a>
-                    </div>
-                </div>
             </div>
 
             <div class="bg-gray-50 p-4 rounded-lg mt-6">
